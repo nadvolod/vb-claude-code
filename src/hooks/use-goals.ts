@@ -108,7 +108,7 @@ export function useGoals() {
 
     const updates = {
       achieved: !goal.achieved,
-      achievedAt: !goal.achieved ? new Date().toISOString() : null
+      achieved_at: !goal.achieved ? new Date().toISOString() : null
     }
 
     return updateGoal(id, updates)

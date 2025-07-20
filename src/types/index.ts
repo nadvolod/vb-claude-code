@@ -1,12 +1,13 @@
 export interface Goal {
   id: string;
+  user_id: string;
   image: string;
   description: string;
   why?: string;
   deadline: string;
-  createdAt: string;
+  created_at: string;
   achieved: boolean;
-  achievedAt?: string;
+  achieved_at?: string;
 }
 
 export interface UserAchievement {
